@@ -1,0 +1,30 @@
+# DeepSeek 分流规则集 (建议策略: DIRECT)
+# 匹配类型,匹配模式,策略
+
+# --- 1. 核心主域名 (覆盖官网、Web端、API) ---
+DOMAIN-SUFFIX,deepseek.com,DIRECT
+
+# --- 2. 开发者平台与文档 (Platform & API Docs) ---
+DOMAIN,platform.deepseek.com,DIRECT
+DOMAIN,api-docs.deepseek.com,DIRECT
+DOMAIN,api.deepseek.com,DIRECT
+
+# --- 3. 依赖的第三方风控与前端资源 ---
+DOMAIN-SUFFIX,fengkongcloud.cn,DIRECT
+DOMAIN-SUFFIX,fengkongcloud.com,DIRECT
+DOMAIN-SUFFIX,portal101.cn,DIRECT
+DOMAIN-SUFFIX,portal101.com,DIRECT
+
+# --- 4. 统计与客服组件 (Sentry, Intercom等) ---
+DOMAIN-SUFFIX,sentry.io,DIRECT
+DOMAIN-SUFFIX,intercom.io,DIRECT
+DOMAIN-SUFFIX,intercom.com,DIRECT
+DOMAIN-SUFFIX,intercomcdn.com,DIRECT
+
+# --- 5. 字节跳动相关服务 (Volces 火山引擎) ---
+DOMAIN-SUFFIX,volces.com,DIRECT
+
+# --- 6. 可选：屏蔽部分上传信息的地址 (按需开启) ---
+# DOMAIN-SUFFIX,apmplus.volces.com,REJECT
+# DOMAIN-SUFFIX,gator.volces.com,REJECT
+# DOMAIN-SUFFIX,guh50jw4-ios.mobile-messenger.intercom.com,REJECT
