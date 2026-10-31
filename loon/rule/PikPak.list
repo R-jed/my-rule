@@ -3,6 +3,7 @@ DOMAIN-SUFFIX,static.mypikpak.com,DIRECT
 DOMAIN-KEYWORD,dl-z01a-,DIRECT
 DOMAIN-KEYWORD,dl-a10b-,DIRECT
 DOMAIN-KEYWORD,dl-b07-,DIRECT
+DOMAIN-KEYWORD,thumbnail-drive,DIRECT
 
 # --- 2. 需要拒绝的地区检测域名 ---
 DOMAIN,access.mypikpak.com,REJECT
