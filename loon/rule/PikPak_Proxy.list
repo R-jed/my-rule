@@ -1,4 +1,3 @@
-# 需要代理的 API
 DOMAIN,api.mypikpak.com
 DOMAIN,api-drive.mypikpak.com
 DOMAIN-SUFFIX,dlandroid.rcv.sandai.net
@@ -7,3 +6,4 @@ DOMAIN-SUFFIX,hub5pn.wap.sandai.net
 DOMAIN-SUFFIX,hub5pnc.sandai.net
 DOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net
 DOMAIN-SUFFIX,hubciddata.sandai.net
+DOMAIN,user.mypikpak.com
