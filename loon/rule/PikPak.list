@@ -20,3 +20,5 @@ DOMAIN-SUFFIX,hub5pn.wap.sandai.net,pikpak
 DOMAIN-SUFFIX,hub5pnc.sandai.net,pikpak
 DOMAIN-SUFFIX,hub5pr.v6.phub.sandai.net,pikpak
 DOMAIN-SUFFIX,hubciddata.sandai.net,pikpak
+DOMAIN,user.mypikpak.com,pikpak      
+DOMAIN-SUFFIX,mypikpak.com,pikpak    
