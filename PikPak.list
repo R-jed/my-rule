@@ -23,4 +23,4 @@ DOMAIN-SUFFIX,hubciddata.sandai.net,pikpak
 
 # --- 5. 兜底规则 (范围最广，放最后) ---
 # 如果你确实需要把所有没写明的 mypikpak 子域名都走代理，再保留这行
-DOMAIN-SUFFIX,mypikpak.com,pikpak
+# DOMAIN-SUFFIX,mypikpak.com,pikpak
