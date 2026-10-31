@@ -1,0 +1,39 @@
+# 微信分流规则集 (建议策略: DIRECT)
+# 匹配类型,匹配模式,策略
+
+# --- 核心域名 ---
+DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+DOMAIN-SUFFIX,weixin.com,DIRECT
+DOMAIN-SUFFIX,wechat.com,DIRECT
+DOMAIN-SUFFIX,servicewechat.com,DIRECT
+
+# --- 静态资源、图片与视频 (走腾讯 CDN，直连最快) ---
+DOMAIN-SUFFIX,qlogo.cn,DIRECT
+DOMAIN-SUFFIX,qpic.cn,DIRECT
+DOMAIN-SUFFIX,wxapp.tc.qq.com,DIRECT
+DOMAIN-SUFFIX,weixinbridge.com,DIRECT
+DOMAIN-SUFFIX,weixinsxy.com,DIRECT
+
+# --- 支付与法律相关 ---
+DOMAIN-SUFFIX,tenpay.com,DIRECT
+DOMAIN-SUFFIX,wechatpay.com,DIRECT
+DOMAIN-SUFFIX,wechatlegal.net,DIRECT
+
+# --- 特殊登录与云服务域名 (防止卡顿和转圈) ---
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net,DIRECT
+DOMAIN-SUFFIX,iot-tencent.com,DIRECT
+
+# --- 补充 IP 段 (部分直连 IP，防止绕过域名解析) ---
+IP-CIDR,101.32.104.4/32,DIRECT,no-resolve
+IP-CIDR,101.32.104.41/32,DIRECT,no-resolve
+IP-CIDR,101.32.104.56/32,DIRECT,no-resolve
+IP-CIDR,101.32.118.25/32,DIRECT,no-resolve
+IP-CIDR,101.32.133.16/32,DIRECT,no-resolve
+IP-CIDR,101.32.133.53/32,DIRECT,no-resolve
+IP-CIDR,101.32.133.209/32,DIRECT,no-resolve
+IP-CIDR,129.226.3.47/32,DIRECT,no-resolve
+IP-CIDR,129.226.107.244/32,DIRECT,no-resolve
+
+# --- 兜底拦截 (可选)：阻止微信在后台使用代理节点 ---
+USER-AGENT,MicroMessenger*,DIRECT
+USER-AGENT,WeChat*,DIRECT
